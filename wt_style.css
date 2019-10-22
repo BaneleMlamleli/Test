@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #D3D3D3;
+    color: #474a4f;;
+}
+
+.body_wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*response messages styling*/
+.response_messages {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+}
+.competition_error_response_message {
+    background: #F08080;
+    border: #FF0000 2px solid ;
+}
+
+.competition_success_response_message {
+    background: #90EE90;
+    border: #006400 2px solid;
+}
+
+/*hr line break styling*/
+.line_break {
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    width: 90%;
+    flex-grow: 1;
+    display: flex;
+}
+
+/*Import charities and select charity cards styling*/
+.competition_page_card {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 35vh;
+    background: #FFFFFF;
+}
+
+/*Import charity and Add charity buttons*/
+.competition_page_buttons {
+    width: 20vw;
+    background: #fff;
+    padding: 10px 20px;
+    border: solid 1px  #f17660;
+    border-radius: 30px;
+    color: #f17660;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.center_element{
+    padding-top: 1%;
+    margin: 0 auto;
+}
+
+/*Select charity card elements styling*/
+.dropdown_selector select  {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20vw;
+    height: 5vh;
+    font-weight: bold;
+}
+
+.dropdown_selector div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 1024px) {
+    .card_wrapper div{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    /*Import charities and select charity cards styling*/
+    .competition_page_card {
+        width: 45%;
+        height: 35vh;
+        background: #FFFFFF;
+    }
+}

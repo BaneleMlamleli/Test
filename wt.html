@@ -1,0 +1,81 @@
+<html lang="en" class="smart-style-0">
+<head>
+    <title>WowTurf_Test</title>
+    <link rel="stylesheet" href="wt_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="body_wrapper">
+        <!-- response messages -->
+        <div>
+            <div id="id_competition_error_message" class="response_messages competition_error_response_message">
+                <p>Error message</p>
+            </div>
+            <div id="id_competition_success_message" class="response_messages competition_success_response_message">
+                <p>Success message</p>
+            </div>
+        </div>
+        <!-- Wrapper div for separating div cards for importing charities and selecting charities -->
+        <div class="card_wrapper">
+            <!-- Import charity div/card -->
+            <div class="competition_page_card import_charity">
+                <div>
+                    <h3>Import charities</h3>
+                    <div class="line_break"></div>
+                </div>
+                <div class="center_element">
+<!--                    <div>-->
+                        <button id="btn_import_charities" class="competition_page_buttons">Import charities</button>
+<!--                    </div>-->
+<!--                    <div class="test">-->
+                        <label id="import_file" value="imported file name">imported file name</label>
+<!--                    </div>-->
+                </div>
+            </div>
+            <!-- Select charity div/card -->
+            <div class="competition_page_card select_charity">
+                <h3>Select charity</h3>
+                <div class="line_break"></div>
+                <div class="dropdown_selector">
+                    <div>
+                        <select name="charity_place">
+                            <option value="global">Global</option>
+                            <option value="country">Country</option>
+                            <option value="local">Local</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="region">
+                            <option value="charity1">Choose region</option>
+                            <option value="region1">Region1</option>
+                            <option value="region2">Region2</option>
+                            <option value="region3">Region3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="charity">
+                            <option value="option">Choose charity</option>
+                            <option value="charity1">Charity1</option>
+                            <option value="charity2">Charity2</option>
+                            <option value="charity3">Charity3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="add_charity_button">
+                    <div>
+                        <button id="btn_add_to_draw" class="competition_page_buttons">Add charity to draw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        <div class="payout_wrapper">-->
+<!--            <div>-->
+<!--                <label for="payout_amount">Payout amount (in $)</label>-->
+<!--                <input type="number" id="payout_amount">-->
+<!--                <button class="btn_new_competition">Run a New Competition</button>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</body>
+</html>
